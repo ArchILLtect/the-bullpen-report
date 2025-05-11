@@ -41,3 +41,10 @@
   width: 850px;
   margin-top: 10px;
 }
+
+.underConstruction {
+  font-size: 40px;
+  color: #ec8a49;
+  background-color: #282c34;
+  margin-top: 20px;
+}

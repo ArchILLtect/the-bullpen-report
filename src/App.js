@@ -7,6 +7,8 @@ function App() {
             <h1>Welcome to The Bullpen Report</h1>
             <h2>Created by Nick Hanson - Built with React</h2>
             <h3>Version 0.1.0 - Using the Bullpen API</h3>
+            
+            <p class="underConstruction">🚧 This site is under construction - content coming soon 🚧</p>
         </div>
     );
 }
