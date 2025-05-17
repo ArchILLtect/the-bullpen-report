@@ -17,14 +17,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import { Contact } from './pages/Contact';
 import { Stats } from './pages/Stats';
-// import { Homepage } from './pages/Homepage';
+import { Homepage } from './pages/Homepage';
 
 export default function App() {
   return (
     <Router>
         <Navbar />
         <Routes>
-            <Route path="/" element={<h1>Welcome to The Bullpen Report</h1>} />
+            <Route path="/" element={<Homepage />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/stats" element={<Stats />} />
