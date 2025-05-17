@@ -14,9 +14,10 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import About from './About';
-import { Contact } from './Contact';
-import { Stats } from './Stats';
+import About from './pages/About';
+import { Contact } from './pages/Contact';
+import { Stats } from './pages/Stats';
+// import { Homepage } from './pages/Homepage';
 
 export default function App() {
   return (
