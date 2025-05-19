@@ -10,26 +10,26 @@ The Bullpen Report is licensed under the MIT License.
 See the LICENSE file in the project root for more information.
 */
 
-import './App.css';
-import Navbar from './Components/Navbar';
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import About from './pages/About';
-import { Contact } from './pages/Contact';
-import { Stats } from './pages/Stats';
-import { Homepage } from './pages/Homepage';
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
+import { Contact } from "./pages/Contact";
+import Stats from "./pages/Stats";
+import { Homepage } from "./pages/Homepage";
 
 export default function App() {
-  return (
-    <Router>
-        <Navbar />
-        <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/stats" element={<Stats />} />
-            <Route path="*" element={<h2>404: Page Not Found</h2>} />
-        </Routes>
-    </Router>
-  );
+    return (
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Homepage />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/stats" element={<Stats />} />
+                <Route path="*" element={<h2>404: Page Not Found</h2>} />
+            </Routes>
+        </Router>
+    );
 }
