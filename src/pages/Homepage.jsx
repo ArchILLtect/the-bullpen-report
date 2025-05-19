@@ -11,16 +11,22 @@ See the LICENSE file in the project root for more information.
 */
 
 import React from 'react';
+import { Heading, Text, Box } from "@chakra-ui/react";
 
 export function Homepage() {
   return (
-        <div className="App">
+        <Box p={8}>
             <img className="mainImage" src="images/bullpen_practice.jpg" alt="Bullpen"/>
-            <h1>Welcome to The Bullpen Report</h1>
+            <Heading as="h1" size="xl" color="blue.600">
+                Welcome to The Bullpen Report
+            </Heading>
             <h2>Created by Nick Hanson - Built with React</h2>
             <h3>Version 0.1.0 - Using the Bullpen API</h3>
+            <Text mt={4}>
+                This app is styled with Chakra UI — sleek, modern, and dev-friendly.
+            </Text>
             
             <p className="underConstruction">🚧 This site is under construction - content coming soon 🚧</p>
-        </div>
+        </Box>
     );
 }
