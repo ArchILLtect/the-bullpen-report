@@ -11,16 +11,17 @@ See the LICENSE file in the project root for more information.
 */
 
 import React from 'react';
+import { Heading, Text, Box } from "@chakra-ui/react";
 
 export default function About() {
-  return (
-    <div className="page">
-      <h1>About The Bullpen Report</h1>
-      <p>
-        The Bullpen Report is a baseball statistics viewer powered by AWS services.
-        It connects to a custom API built using Lambda, API Gateway, and DynamoDB,
-        delivering live team, player, and game data directly to the browser.
-      </p>
-    </div>
-  );
+    return (
+        <Box p={8}>
+            <Heading mb={4}>About The Bullpen Report</Heading>
+            <Text fontSize="md" color="gray.600">
+                The Bullpen Report is a baseball statistics viewer powered by AWS services.
+                It connects to a custom API built using Lambda, API Gateway, and DynamoDB,
+                delivering live team, player, and game data directly to the browser.
+            </Text>
+        </Box>
+    );
 }

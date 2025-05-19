@@ -11,13 +11,19 @@ See the LICENSE file in the project root for more information.
 */
 
 import React from 'react';
+import { Heading, Text, Box, Input, Button, Textarea, VStack } from "@chakra-ui/react";
 
 export function Contact() {
-  return (
-    <div className="page">
-      <h1>Contact Us</h1>
-      <p>Email: contact@bullpenreport.com</p>
-      <p>GitHub: github.com/yourprofile</p>
-    </div>
-  );
+    return (
+        <Box p={8}>
+            <Heading mb={4}>Contact Us</Heading>
+            <Text mb={2}>Have feedback or ideas?</Text>
+            <VStack spacing={4} align="stretch" maxW="400px">
+                <Input placeholder="Your Name" />
+                <Input placeholder="Your Email" />
+                <Textarea placeholder="Your Message" />
+                <Button colorScheme="blue" alignSelf="flex-start">Send</Button>
+            </VStack>
+        </Box>
+    );
 }

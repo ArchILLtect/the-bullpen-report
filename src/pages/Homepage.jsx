@@ -11,22 +11,19 @@ See the LICENSE file in the project root for more information.
 */
 
 import React from 'react';
-import { Heading, Text, Box } from "@chakra-ui/react";
+import { Heading, Text, Box, Image } from "@chakra-ui/react";
 
 export function Homepage() {
-  return (
-        <Box p={8}>
-            <img className="mainImage" src="images/bullpen_practice.jpg" alt="Bullpen"/>
-            <Heading as="h1" size="xl" color="blue.600">
-                Welcome to The Bullpen Report
-            </Heading>
-            <h2>Created by Nick Hanson - Built with React</h2>
-            <h3>Version 0.1.0 - Using the Bullpen API</h3>
-            <Text mt={4}>
-                This app is styled with Chakra UI — sleek, modern, and dev-friendly.
-            </Text>
-            
-            <p className="underConstruction">🚧 This site is under construction - content coming soon 🚧</p>
+    return (
+        <Box textAlign="center" mt={8}>
+            <Image src="images/bullpen_practice.jpg" alt="Bullpen" mx="auto" maxW="800px" borderRadius="md" />
+            <Heading mt={4} color="blue.600">Welcome to The Bullpen Report</Heading>
+            <Text fontSize="lg" mt={2} color="gray.600">Created by Nick Hanson - Built with React</Text>
+            <Text fontSize="md" color="gray.500">Version 0.1.0 - Using the Bullpen API</Text>
+            <Text mt={6} fontWeight="medium">This app is styled with Chakra UI — sleek, modern, and dev-friendly.</Text>
+            <Box mt={6} bg="gray.800" color="orange.300" p={4} borderRadius="md" fontSize="xl">
+                🚧 This site is under construction - content coming soon 🚧
+            </Box>
         </Box>
-    );
+        );
 }
